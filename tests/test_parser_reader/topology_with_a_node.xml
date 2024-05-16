@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grenml:Topology xmlns:grenml="http://schemas.ogf.org/nml/2020/01/grenml" xmlns:nml="http://schemas.ogf.org/nml/2013/05/base#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://schemas.ogf.org/nml/2020/01/grenml grenml.xsd http://schemas.ogf.org/nml/2013/05/base# nmlbase.xsd"
+                 id="urn:ogf:network:global_MVP">
+    <grenml:name>MyISP</grenml:name>
+    <grenml:owner>urn:ogf:network:national</grenml:owner>
+    <grenml:Property name="description">This file contains multiple institutions</grenml:Property>
+
+    <grenml:Institution id="urn:ogf:network:global" version="2020-04-08T08:20:15-05:00">
+        <grenml:name>INST_1</grenml:name>
+        <grenml:short-name>gren</grenml:short-name>
+    </grenml:Institution>
+    <grenml:Institution id="urn:ogf:network:national">
+        <grenml:name>INST_2</grenml:name>
+    </grenml:Institution>
+    <grenml:Institution id="urn:ogf:network:local">
+        <grenml:name>INST_3</grenml:name>
+    </grenml:Institution>
+
+    <grenml:Node id="urn:ogf:network:myisp.com:node1">
+        <grenml:name>Node 1</grenml:name>
+        <grenml:short-name>node1</grenml:short-name>
+        <grenml:owner>urn:ogf:network:local</grenml:owner>
+        <grenml:owner>urn:ogf:network:national</grenml:owner>
+        <grenml:owner>urn:ogf:network:global</grenml:owner>
+        <grenml:owner>urn:ogf:network:global</grenml:owner>
+        <grenml:Lifetime>
+            <nml:start>2020-04-08T08:20:15.010-04:00</nml:start>
+            <nml:end>2020-01-30T02:10:23Z</nml:end>
+        </grenml:Lifetime>
+        <grenml:Location>
+            <grenml:long>180</grenml:long>
+            <grenml:lat>90</grenml:lat>
+            <grenml:alt>33</grenml:alt>
+            <grenml:unlocode>US NYC</grenml:unlocode>
+            <grenml:address>45 Rome</grenml:address>
+        </grenml:Location>
+         <grenml:Property name="desc">This is detailed node</grenml:Property>
+    </grenml:Node>
+</grenml:Topology>

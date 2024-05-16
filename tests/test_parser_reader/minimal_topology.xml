@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grenml:Topology xmlns:grenml="http://schemas.ogf.org/nml/2020/01/grenml"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation=" http://schemas.ogf.org/nml/2020/01/grenml grenml.xsd nmlbase.xsd"
+                 id="urn:ogf:network:global_MVP">
+    <grenml:name>MyISP</grenml:name>
+    <grenml:owner>urn:ogf:network:global_MVP1</grenml:owner>
+    <grenml:Institution id="urn:ogf:network:global_MVP1">
+        <grenml:name>INST_1</grenml:name>
+    </grenml:Institution>
+</grenml:Topology>
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grenml:Topology xmlns:grenml="http://schemas.ogf.org/nml/2020/01/grenml" xmlns:nml="http://schemas.ogf.org/nml/2013/05/base#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://schemas.ogf.org/nml/2020/01/grenml grenml.xsd http://schemas.ogf.org/nml/2013/05/base# nmlbase.xsd" id="urn:ogf:network:global">
+    <grenml:name>Global Research and Education Network</grenml:name>
+    <grenml:owner>urn:ogf:network:global</grenml:owner>
+    <!--
+        The list of institutions referenced within this topology. 
+        The "id" is used in the "owner" functionality.
+    -->
+    <grenml:Institution id="urn:ogf:network:global">
+        <grenml:name>GREN</grenml:name>
+        <grenml:type>global</grenml:type>
+    </grenml:Institution>
+
+    <!-- Topology -->
+    <grenml:Topology id="urn:ogf:network:myisp.com">
+        <grenml:name>MyISP</grenml:name>
+        <!-- Lifetime of this sub-topology. -->
+        <grenml:owner>urn:ogf:network:myisp.com</grenml:owner>
+        <grenml:Institution id="urn:ogf:network:myisp.com">
+            <grenml:name>MyISP</grenml:name>
+            <grenml:type>nren</grenml:type>
+        </grenml:Institution>
+        <grenml:Link id="urn:ogf:network:myisp.com:link1">
+            <grenml:name>Node 1 - Node 2</grenml:name>
+            <grenml:short-name>Node1-Node2</grenml:short-name>
+            <grenml:owner>urn:ogf:network:myisp.com</grenml:owner>
+            <grenml:node>urn:ogf:network:myisp.com:node1</grenml:node>
+            <grenml:node>urn:ogf:network:myisp.com:node2</grenml:node>
+        </grenml:Link>
+        <!-- The first node within this topology. -->
+        <grenml:Node id="urn:ogf:network:myisp.com:node1">
+            <grenml:name>Node 1</grenml:name>
+            <grenml:short-name>Node1</grenml:short-name>
+            <grenml:owner>urn:ogf:network:myisp.com</grenml:owner>
+            <grenml:Lifetime>
+                <nml:start>2020-01-30T02:10:23.000Z</nml:start>
+                <nml:end>2020-11-24T18:12:27.907-08:00</nml:end>
+            </grenml:Lifetime>
+            <grenml:Location>
+                <grenml:long>111</grenml:long>
+                <grenml:lat>40</grenml:lat>
+            </grenml:Location>
+        </grenml:Node>
+        <!-- The second node within this topology. -->
+        <grenml:Node id="urn:ogf:network:myisp.com:node2">
+            <grenml:name>Node 2</grenml:name>
+            <grenml:short-name>node2</grenml:short-name>
+            <grenml:owner>urn:ogf:network:myisp.com</grenml:owner>
+            <grenml:Location>
+                <grenml:long>111</grenml:long>
+                <grenml:lat>40</grenml:lat>
+            </grenml:Location>
+        </grenml:Node>
+    </grenml:Topology>
+    <!-- Another topology. -->
+    <grenml:Topology id="urn:ogf:network:es.net">
+        <grenml:name>ESnet</grenml:name>
+        <grenml:owner>urn:ogf:network:es.net</grenml:owner>
+        <grenml:Institution id="urn:ogf:network:es.net">
+            <grenml:name>ESnet</grenml:name>
+            <grenml:type>nren</grenml:type>
+        </grenml:Institution>
+    </grenml:Topology>
+    <nml:Topology></nml:Topology>
+</grenml:Topology>

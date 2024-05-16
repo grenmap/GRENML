@@ -1,0 +1,21 @@
+# Distribution / Packaging
+/build/*
+/dist/*
+*.egg
+*.eggs
+*.egg-info/
+*.pyc
+
+# Mac
+.DS_Store
+
+# IntelliJ (Pycharm) configuration folder
+.idea/
+
+# Visual Studio Code configuration folder
+.vscode/
+
+# Unit test results
+tests/test_result/*
+
+venv/
